@@ -124,7 +124,7 @@ Future<Map> getJson() async {
   try
   {
   var url =
-      'http://api.themoviedb.org/3/discover/movie?api_key=30f79e13886a7f28e4c6a39c415ace24';
+      'http://api.themoviedb.org/3/discover/movie?api_key={Keys}';
   http.Response response = await http.get(url);
   return json.decode(response.body);
   }
